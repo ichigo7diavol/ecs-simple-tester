@@ -9,7 +9,7 @@ namespace Project.Features.CoreScene
         : MonoBehaviour
     {
         [SerializeField] 
-        private MovableSettings _movableSettings;
+        private DraggingSettings _draggingSettings;
         
         [SerializeField] 
         private CellsGridView _cellsGridView;
@@ -23,7 +23,7 @@ namespace Project.Features.CoreScene
         public CameraView CameraView
             => _cameraView;
     
-        public MovableSettings MovableSettings 
-            => _movableSettings;
+        public DraggingSettings DraggingSettings 
+            => _draggingSettings;
     }
 }

@@ -18,7 +18,7 @@ namespace Project.Features.CoreScene.Simulation.Dragging.Systems
     {
         private const int ClickInputButtonId = 0;
         
-        private readonly MovableSettings _settings;
+        private readonly DraggingSettings _settings;
         
         private EcsWorld _world;
 
@@ -30,7 +30,7 @@ namespace Project.Features.CoreScene.Simulation.Dragging.Systems
         private EcsPool<CameraRefComponent> _cameraPool;
         private EcsPool<DraggedTag> _draggedTagPool;
         
-        public DragEndSystem(MovableSettings settings)
+        public DragEndSystem(DraggingSettings settings)
         {
             Assert.IsNotNull(settings);
             

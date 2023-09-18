@@ -13,7 +13,7 @@ namespace Project.Features.CoreScene.Simulation.Dragging.Systems
         : IEcsInitSystem
         , IEcsRunSystem
     {
-        private readonly MovableSettings _movableSettings;
+        private readonly DraggingSettings _movableSettings;
         
         private EcsWorld _world;
 
@@ -23,7 +23,7 @@ namespace Project.Features.CoreScene.Simulation.Dragging.Systems
         private EcsFilter _movableFilter;
         private EcsFilter _cameraFilter;
 
-        public DragSystem(MovableSettings movableSettings)
+        public DragSystem(DraggingSettings movableSettings)
         {
             Assert.IsNotNull(movableSettings);
             

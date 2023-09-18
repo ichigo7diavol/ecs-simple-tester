@@ -2513,7 +2513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 806c011ae6f544e78ea766b6b5585dfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _movableSettings: {fileID: 11400000, guid: 94cef21b2005c834f975b41c2bbed384, type: 2}
+  _draggingSettings: {fileID: 11400000, guid: 94cef21b2005c834f975b41c2bbed384, type: 2}
   _cellsGridView: {fileID: 822842933}
   _cameraView: {fileID: 1555207153}
 --- !u!4 &1825403500

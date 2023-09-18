@@ -10,7 +10,7 @@ namespace Project.Features.CoreScene.Simulation.Dragging.Systems
     public class DraggedEntitiesSpawnerSystem
         : IEcsInitSystem, IEcsRunSystem
     {
-        private readonly MovableSettings _settings;
+        private readonly DraggingSettings _settings;
 
         private EcsWorld _world;
 
@@ -19,7 +19,7 @@ namespace Project.Features.CoreScene.Simulation.Dragging.Systems
         private EcsPool<DraggedTag> _draggedTagsPool;
         private EcsPool<TransformRefComponent> _transformRefComponentsPool;
 
-        public DraggedEntitiesSpawnerSystem(MovableSettings settings)
+        public DraggedEntitiesSpawnerSystem(DraggingSettings settings)
         {
             Assert.IsNotNull(settings);
             

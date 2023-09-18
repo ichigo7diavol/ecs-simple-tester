@@ -76,14 +76,14 @@ namespace Project.Features.CoreScene.Simulation
 #endif
                 .Add(new CellsInitializeSystem(_dependencies.CellsGridView))
                 .Add(new CameraInitializationSystem(_dependencies.CameraView))
-                .Add(new DraggedEntitiesSpawnerSystem(_dependencies.MovableSettings))
-                .Add(new DragEndSystem(_dependencies.MovableSettings))
+                .Add(new DraggedEntitiesSpawnerSystem(_dependencies.DraggingSettings))
+                .Add(new DragEndSystem(_dependencies.DraggingSettings))
                 .Init();
 
             _fixedUpdateSystems = new EcsSystems(_defaultWorld);
             
             _fixedUpdateSystems
-                .Add(new DragSystem(_dependencies.MovableSettings))
+                .Add(new DragSystem(_dependencies.DraggingSettings))
 #if UNITY_EDITOR
                 .Add(new Leopotam.EcsLite.UnityEditor.EcsSystemsDebugSystem ())
 #endif

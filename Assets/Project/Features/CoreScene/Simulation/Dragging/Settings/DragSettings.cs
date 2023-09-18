@@ -2,8 +2,8 @@
 
 namespace Project.Features.CoreScene.Simulation.Dragging.Settings
 {
-    [CreateAssetMenu(menuName = "Settings/" + nameof(MovableSettings))]
-    public class MovableSettings : ScriptableObject
+    [CreateAssetMenu(menuName = "Settings/" + nameof(DraggingSettings))]
+    public class DraggingSettings : ScriptableObject
     {
         [SerializeField] 
         private GameObject _draggedObjectPregab;
